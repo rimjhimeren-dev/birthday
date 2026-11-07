@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <meta name="description" content="A little birthday surprise made with love for Anshu.">
+  <title>For Anshu ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home">a little something <span>♡</span></a>
+    <button class="music-button" id="musicButton" type="button" aria-label="Play birthday music">♫ <span>Play music</span></button>
+    <audio id="birthdayMusic" src="assets/music/birthday-song.mp3" loop preload="none"></audio>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="eyebrow"><span class="sparkle">✦</span> MADE WITH LOVE, JUST FOR YOU <span class="sparkle">✦</span></div>
+      <p class="tiny-note">to my favourite person</p>
+      <h1>Happy Birthday,<br><em>Rimjhim (Anshu)</em><span class="pink-dot">.</span></h1>
+      <p class="hero-copy">Today is a little more beautiful because the world got you. I hope this tiny corner of the internet makes you smile.</p>
+      <button class="primary-button" id="surpriseButton" type="button">Open your surprise <span>♡</span></button>
+      <div class="scroll-note">SCROLL A LITTLE <span>↓</span></div>
+      <span class="floating-heart heart-one">♡</span><span class="floating-heart heart-two">♥</span><span class="floating-heart heart-three">♡</span>
+    </section>
+
+    <section class="countdown-section section">
+      <div class="section-kicker">THE DAY WE CELEBRATE YOU</div>
+      <h2>Counting down to <em>your day</em></h2>
+      <div class="countdown" id="countdown">
+        <div><strong id="days">00</strong><span>DAYS</span></div>
+        <b>:</b><div><strong id="hours">00</strong><span>HOURS</span></div>
+        <b>:</b><div><strong id="minutes">00</strong><span>MINUTES</span></div>
+        <b>:</b><div><strong id="seconds">00</strong><span>SECONDS</span></div>
+      </div>
+      <p class="countdown-note" id="countdownNote">Every second brings us closer to celebrating you.</p>
+    </section>
+
+    <section class="cake-section section">
+      <div class="section-kicker">MAKE A WISH</div>
+      <h2>A cake, <em>just for you</em></h2>
+      <p class="section-copy">Tap the candles and make your sweetest wish.</p>
+      <button class="cake-button" id="cakeButton" type="button" aria-label="Blow out the candles">
+        <div class="flames"><i></i><i></i><i></i></div>
+        <div class="candles"><i></i><i></i><i></i></div>
+        <div class="cake-top"></div><div class="cake-body"><span>♡</span></div>
+        <div class="cake-plate"></div>
+      </button>
+      <p class="cake-hint" id="cakeHint">♡ Tap the cake to blow out the candles ♡</p>
+    </section>
+
+    <section class="gallery-section section">
+      <div class="section-kicker">LITTLE MOMENTS, BIG MEMORIES</div>
+      <h2>A few pieces of <em>our story</em></h2>
+      <p class="section-copy">Replace these pictures with your favourite memories together.</p>
+      <div class="gallery">
+        <figure class="photo-card photo-one"><img src="assets/photos/memory-1.jpg" alt="A favourite memory" onerror="this.style.display='none'"><figcaption>the little things ♡</figcaption></figure>
+        <figure class="photo-card photo-two"><img src="assets/photos/memory-2.jpg" alt="A happy memory" onerror="this.style.display='none'"><figcaption>the happy days</figcaption></figure>
+        <figure class="photo-card photo-three"><img src="assets/photos/memory-3.jpg" alt="A beautiful moment" onerror="this.style.display='none'"><figcaption>always worth remembering</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="letter-section section" id="letter">
+      <div class="letter-card">
+        <div class="letter-stamp">♡</div>
+        <div class="section-kicker">A NOTE FROM THE HEART</div>
+        <h2>For you, <em>Anshu</em></h2>
+        <p class="letter-text">Some people make ordinary days feel special just by being themselves. You are one of those people. I hope this new chapter brings you gentle mornings, loud laughter, beautiful surprises, and every little thing your heart has been wishing for.</p>
+        <p class="letter-signoff">Keep shining, birthday star. <span>♡</span></p>
+        <button class="text-button" id="letterButton" type="button">Read a little more ↓</button>
+        <p class="extra-letter" id="extraLetter" hidden>You deserve to feel loved, celebrated, and appreciated — today and on all the days in between. Happy birthday! ✨</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>made with love</span> <b>♡</b> <span>for Anshu</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
