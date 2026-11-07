@@ -1,5 +1,5 @@
 // CHANGE THIS to the birthday date (local time), for example "2026-12-25T00:00:00".
-const BIRTHDAY_DATE = "2026-12-25T00:00:00";
+const BIRTHDAY_DATE = "2026-11-08T00:00:00";
 
 const $ = (id) => document.getElementById(id);
 const targetDate = new Date(BIRTHDAY_DATE).getTime();
